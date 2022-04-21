@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     
-    public Vector2 direction= Vector2.right;
+    public Vector3 direction= Vector2.right;
     public float speed;
 
     public float damage;
@@ -20,10 +21,11 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
+        //GetComponent<Rigidbody2D>().velocity = direction * speed;
+        GetComponent<Transform>().localPosition += direction * speed * Time.deltaTime;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+   /* void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.collider.tag.Equals(team))
         {
@@ -31,5 +33,14 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (!col.tag.Equals(team))
+        {
+            col.gameObject.SendMessage("ApplyDamage", damage);
+            Destroy(gameObject);
+        }
     }
 }
