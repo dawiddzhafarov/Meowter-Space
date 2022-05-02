@@ -5,6 +5,7 @@ using UnityEngine;
 public class MobAttack : MonoBehaviour
 {
     private bool canAttack = true;
+    public float attackColldown;
 
     public GameObject projectile;
     
@@ -37,7 +38,7 @@ public class MobAttack : MonoBehaviour
     }
     IEnumerator AttackCooldown()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(attackColldown);
         canAttack = true;
     }
 }

@@ -18,10 +18,13 @@ public class MovesHorizontal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity=(new Vector3(
-            -1,
-            0,
-            0        ) * speed);
+        rb.velocity=new Vector3(
+            -1* speed,
+            rb.velocity.y,
+            0        ) ;
+
         
     }
+    
+ 
 }

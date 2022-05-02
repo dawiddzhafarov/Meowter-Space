@@ -39,6 +39,7 @@ public class Projectile : MonoBehaviour
     {
         if (!col.tag.Equals(team))
         {
+            
             col.gameObject.SendMessage("ApplyDamage", damage);
             Destroy(gameObject);
         }

@@ -7,14 +7,14 @@ public class MovesUpAndDown : MonoBehaviour
     private float upOrDown = 1;
     public float upBorder;
     public float downBorder;
+    private float startingPosition;
 
     public Rigidbody2D rb;
 
     public float speed; 
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        startingPosition = transform.position.y;
     }
 
     // Update is called once per frame
@@ -22,18 +22,18 @@ public class MovesUpAndDown : MonoBehaviour
     {
         CheckMovementDirection();
         rb.velocity=(new Vector3(
-            0,
-            upOrDown,
-            0        ) * speed);
+            rb.velocity.x,
+            upOrDown * speed,
+            0        ) );
     }
 
     private void CheckMovementDirection()
     {
-        if (transform.position.y > upBorder)
+        if (transform.position.y-startingPosition > upBorder)
         {
             upOrDown = -1;
         }
-        else if (transform.position.y < downBorder)
+        else if (transform.position.y-startingPosition < downBorder)
         {
             upOrDown = 1;
         }
