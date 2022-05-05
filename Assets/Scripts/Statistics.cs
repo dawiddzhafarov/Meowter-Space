@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Statistics : MonoBehaviour
+public class Statistics
 {
-    private int EnemiesKilled = 0;
+    private static int EnemiesKilled = 0;
     // Start is called before the first frame update
     void Start()
     {
