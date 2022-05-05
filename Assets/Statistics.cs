@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Statistics : MonoBehaviour
 {
+    private int EnemiesKilled = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,15 @@ public class Statistics : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddEnemiesKilled()
+    {
+        EnemiesKilled++;
+    }
+
+    public int GetEnemiesKilled()
+    {
+        return EnemiesKilled;
     }
 }
