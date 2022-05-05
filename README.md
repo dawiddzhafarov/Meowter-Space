@@ -6,3 +6,4 @@ TODO:
 3) Ogarnąć tworzenie scenaruszy tzn. że teraz poleci 5 gówno mobków, potem 3 silniejsze, możliwość wyboru ubgradeu i boss itp- w miare dodane acz troche prowizorka xd
 4) Coś zrobić aby mobek nie przesuwał gracza oraz też aby gracz nie mógł mobka zablokować przed dotarciem do krawędzi ekranu :V
 5) Ui typu hp i staty z boku czy cuś
+6) Podstawowe menu
