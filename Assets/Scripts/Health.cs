@@ -5,7 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float health;
-    
+
+    public Statistics stats = new Statistics();
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class Health : MonoBehaviour
         {
             Destroy(gameObject);
             if(gameObject.tag.Equals("Enemy")){
-                //add stats
+                stats.AddEnemiesKilled();
             }
         }
     }
@@ -33,5 +34,10 @@ public class Health : MonoBehaviour
     public float GetHealth()
     {
         return health;
+    }
+
+    public Statistics getStats()
+    {
+        return stats;
     }
 }
