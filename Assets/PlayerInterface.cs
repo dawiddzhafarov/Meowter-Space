@@ -8,7 +8,9 @@ public class PlayerInterface : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Health health;
-    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TextMeshProUGUI textHP;
+    [SerializeField] private TextMeshProUGUI textEnemies;
+   
     void Start()
     {
         
@@ -18,6 +20,7 @@ public class PlayerInterface : MonoBehaviour
     void Update()
     {
         float hp = health.GetHealth();
-        text.text = $"HP: {hp}";
+        textHP.text = $"HP: {hp}";
+        
     }
 }

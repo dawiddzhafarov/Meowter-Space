@@ -27,7 +27,6 @@ public class KillEnemy : MonoBehaviour
         
         if(col.collider.tag.Equals("Enemy")){
             Destroy(col.collider.gameObject);
-            
         }
     }
 }
