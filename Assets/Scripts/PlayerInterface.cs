@@ -12,6 +12,12 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textEnemies;
     [SerializeField] private TextMeshProUGUI roundTime;
     [SerializeField] private TextMeshProUGUI level;
+    [SerializeField] private TextMeshProUGUI damage;
+    [SerializeField] private TextMeshProUGUI bulletsPerShot;
+    [SerializeField] private TextMeshProUGUI speed;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private Projectile projectile;
+    
     private Statistics statistics = new Statistics();
     private float timer;
     void Start()
@@ -22,6 +28,11 @@ public class PlayerInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed.text = $"Speed: {playerMovement.speed}";
+        
+        //get damage, dont know if its going to work with upgrades
+        damage.text = $"Damage: {projectile.damage}";
+        
         //get level
         level.text = "LEVEL: 1";
         
@@ -30,6 +41,7 @@ public class PlayerInterface : MonoBehaviour
         
         float hp = health.GetHealth();
         textHP.text = $"HP: {hp}";
+        
         int kills = statistics.GetEnemiesKilled();
         textEnemies.text = $"Enemies killed: {kills}";
     }
