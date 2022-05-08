@@ -7,9 +7,11 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private bool canAttack = true;
     public GameObject projectile;
-    
-
+    private float dashTime = 2;
+    private bool isDashed = false;
     public float speed;
+
+    private float timer = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         UpdateMovement();
+        Dash();
         Attack();
     }
 
@@ -51,5 +54,18 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxis("Horizontal"),
             Input.GetAxis("Vertical"),
             0        ) * speed);
+    }
+
+    void Dash()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && !isDashed)
+        {
+            float newSpeed = speed + 3;
+            rb.velocity=(new Vector3(
+                Input.GetAxis("Horizontal"),
+                Input.GetAxis("Vertical"),
+                0        ) * newSpeed);
+            
+        }
     }
 }
