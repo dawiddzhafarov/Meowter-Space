@@ -8,7 +8,11 @@ public class PlayerMovement : MonoBehaviour
     private bool canAttack = true;
     public GameObject projectile;
     private float dashTime = 2;
-    private bool isDashed = false;
+    //private bool isDashed = false;
+    private bool canDash = true;
+
+    public int numberOfBullets;
+
     public float speed;
 
     private float timer = 0.0f;
@@ -28,17 +32,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Attack()
     {
-        if (canAttack)
-        {
+        if (canAttack) {
             canAttack = false;
-            GameObject throwableWeapon = Instantiate(projectile,
-                transform.position + new Vector3(transform.localScale.x * 0.6f, 0), Quaternion.identity) as GameObject;
-            //Vector2 direction = new Vector2(transform.localScale.x, 0);
-            //throwableWeapon.GetComponent<Projectile>().direction = direction;
-            throwableWeapon.GetComponent<Projectile>().team = "Player";
+            
+            for (int i = 0; i < numberOfBullets; i++) {
+                
+                GameObject throwableWeapon = Instantiate(projectile,
+                    transform.position + new Vector3(transform.localScale.x * 0.6f, 0.10f*(numberOfBullets-1)-0.20f*i), Quaternion.identity) as GameObject;
+                //Vector2 direction = new Vector2(transform.localScale.x, 0);
+                //throwableWeapon.GetComponent<Projectile>().direction = direction;
+                throwableWeapon.GetComponent<Projectile>().team = "Player";
+                throwableWeapon.name = "ThrowableWeapon";
+            }
 
-            throwableWeapon.name = "ThrowableWeapon";
-            StartCoroutine(AttackCooldown());
+
+        StartCoroutine(AttackCooldown());
         }
     }
 
@@ -56,7 +64,25 @@ public class PlayerMovement : MonoBehaviour
             0        ) * speed);
     }
 
-    void Dash()
+
+    void Dash() {
+        if (Input.GetKey(KeyCode.LeftShift) && canDash) {
+            rb.MovePosition(rb.position+rb.velocity.normalized*3f);
+            //rb.AddForce(rb.velocity.normalized*3f, ForceMode2D.Force);
+            canDash = false;
+            StartCoroutine(DashCooldown());
+
+
+        }
+    }
+    
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(2f);
+        canDash = true;
+    }
+
+    /*void Dash()
     {
         if (Input.GetKey(KeyCode.LeftShift) && !isDashed)
         {
@@ -68,4 +94,5 @@ public class PlayerMovement : MonoBehaviour
             
         }
     }
+    */
 }
