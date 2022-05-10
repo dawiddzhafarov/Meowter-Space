@@ -14,5 +14,6 @@ TODO:
        Tekst się pojawia w rogu ekranu :V
 10) Dash pozwalający unikać pocisków bo bez tego troche mało dynamiczna oraz trudna :V plus dzięki temu więcej upgrade'ów można dodać
       Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł
+      Można dodać powidok gracza pokazujący gdzie się znajdzie po dashu/blinku i widoczny tylko wtedy gdy dash nie jest na cooldownie
       
 11) ~~Menu pauzy~~ - done
