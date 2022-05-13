@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private bool canAttack = true;
     public GameObject projectile;
     private float dashTime = 2;
+    
     //private bool isDashed = false;
     private bool canDash = true;
+    public float dashDistance;
 
     public int numberOfBullets;
+    public float damage;
 
     public float speed;
 
@@ -42,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
                 //Vector2 direction = new Vector2(transform.localScale.x, 0);
                 //throwableWeapon.GetComponent<Projectile>().direction = direction;
                 throwableWeapon.GetComponent<Projectile>().team = "Player";
+                throwableWeapon.GetComponent<Projectile>().damage = damage;
                 throwableWeapon.name = "ThrowableWeapon";
             }
 
@@ -67,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Dash() {
         if (Input.GetKey(KeyCode.LeftShift) && canDash) {
-            rb.MovePosition(rb.position+rb.velocity.normalized*3f);
+            rb.MovePosition(rb.position+rb.velocity.normalized*dashDistance);
             //rb.AddForce(rb.velocity.normalized*3f, ForceMode2D.Force);
             canDash = false;
             StartCoroutine(DashCooldown());
