@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c027750054d5415fb1a5779adfa040f6, type: 3}
   m_Name: Major Damage Up
   m_EditorClassIdentifier: 
-  extraDamage: 0
+  extraDamage: 3

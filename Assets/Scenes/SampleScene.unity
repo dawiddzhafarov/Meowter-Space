@@ -978,14 +978,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.3
     width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.0447626
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2896,14 +2896,14 @@ MonoBehaviour:
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: 0, z: 0}
     spawnInterval: 0
-    upgrade: 0
+    upgrade: []
   - EnemySpawns:
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: 4, z: 0}
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: -4, z: 0}
     spawnInterval: 2
-    upgrade: 0
+    upgrade: []
   - EnemySpawns:
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: 4, z: 0}
@@ -2912,7 +2912,7 @@ MonoBehaviour:
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: 0, z: 0}
     spawnInterval: 5
-    upgrade: 0
+    upgrade: []
   - EnemySpawns:
     - enemy: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       position: {x: 10, y: 3, z: 0}
@@ -2921,7 +2921,7 @@ MonoBehaviour:
     - enemy: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       position: {x: 10, y: 0, z: 0}
     spawnInterval: 3
-    upgrade: 0
+    upgrade: []
   - EnemySpawns:
     - enemy: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       position: {x: 10, y: 3, z: 0}
@@ -2930,12 +2930,12 @@ MonoBehaviour:
     - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
       position: {x: 10, y: 0, z: 0}
     spawnInterval: 0
-    upgrade: 0
+    upgrade: []
   - EnemySpawns:
     - enemy: {fileID: 6091663954299866275, guid: 4d3f076a4d3ba8c41a5d8f271396c2ca, type: 3}
       position: {x: 9, y: 0, z: 0}
     spawnInterval: 0
-    upgrade: 0
+    upgrade: []
 --- !u!4 &1275864365
 Transform:
   m_ObjectHideFlags: 0
@@ -3223,7 +3223,7 @@ GameObject:
   - component: {fileID: 1403031151}
   - component: {fileID: 1403031156}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3243,7 +3243,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1403031153}
   projectile: {fileID: 3289033988313188146, guid: 738ccf2c11e95ef449b127b9e03871d4, type: 3}
+  dashDistance: 3
   numberOfBullets: 3
+  damage: 1
   speed: 3
 --- !u!58 &1403031152
 CircleCollider2D:
