@@ -9,11 +9,15 @@ TODO:
   -~~Z boku takie rzeczy jak dmg, speed gracza. Zapewne ta lista będzie się rozrastać gdy doda sie upgrade'y~~ - done
       -Pomyśleć nad zastąpieniem tekstu jakimiś grafikami
 6) ~~Podstawowe menu~~ - done 
-7) Kilka przykładowych upgrade'ów na start aby można było dalej na nich operować. {p. dmgUp, speedUp, bullets++, ??? }
-8) ~~Menu wyboru upgrade'u~~ - done (klawisz "Q")
+7) ~~Kilka przykładowych upgrade'ów na start aby można było dalej na nich operować~~. {p. dmgUp, speedUp, bullets++, ??? }
+      Dodałem klasę abstrakcyjną wraz z kilkoma przykładowymi upgrade'ami. https://www.youtube.com/watch?v=PkNRPOrtyls&ab_channel=BMo (Dodać więcej opierając się na tym)
+      
+9) ~~Menu wyboru upgrade'u~~ - done (klawisz "Q")
        Tekst się pojawia w rogu ekranu :V
-10) Dash pozwalający unikać pocisków bo bez tego troche mało dynamiczna oraz trudna :V plus dzięki temu więcej upgrade'ów można dodać
-      Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł
+       Połączyć menu z falami i upgradeami.
+10) ~~Dash pozwalający unikać pocisków bo bez tego troche mało dynamiczna oraz trudna :V plus dzięki temu więcej~~ upgrade'ów można dodać
+      **Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł**
       Można dodać powidok gracza pokazujący gdzie się znajdzie po dashu/blinku i widoczny tylko wtedy gdy dash nie jest na cooldownie
       
 11) ~~Menu pauzy~~ - done
+12) Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu
