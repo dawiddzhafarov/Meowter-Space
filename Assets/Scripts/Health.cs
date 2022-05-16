@@ -16,12 +16,6 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void ApplyDamage(float damage)
-    {
-        health -= damage;
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -31,9 +25,16 @@ public class Health : MonoBehaviour
         }
     }
 
+    void ApplyDamage(float damage)
+    {
+        health -= damage;
+        
+    }
+
     public float GetHealth()
     {
         return health;
+        
     }
 
     public Statistics getStats()

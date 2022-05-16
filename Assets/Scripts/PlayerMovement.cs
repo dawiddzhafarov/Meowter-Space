@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
 
     private float timer = 0.0f;
+
+	public GameObject ghost;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         UpdateMovement();
         Dash();
         Attack();
+       
+		//ghost.rb.MovePosition(rb.position+rb.velocity.normalized*dashDistance);
     }
 
     private void Attack()
@@ -70,6 +74,15 @@ public class PlayerMovement : MonoBehaviour
 
 
     void Dash() {
+        
+        if(!canDash) 
+            ghost.SetActive(false);
+        else
+        {
+            ghost.SetActive(true);
+        }
+        
+        ghost.transform.position = rb.position + rb.velocity.normalized * dashDistance;
         if (Input.GetKey(KeyCode.LeftShift) && canDash) {
             rb.MovePosition(rb.position+rb.velocity.normalized*dashDistance);
             //rb.AddForce(rb.velocity.normalized*3f, ForceMode2D.Force);

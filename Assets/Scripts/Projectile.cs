@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class Projectile : MonoBehaviour
 {
@@ -40,8 +42,9 @@ public class Projectile : MonoBehaviour
         if (!col.tag.Equals(team))
         {
             
-            col.gameObject.SendMessage("ApplyDamage", damage);
+            col.gameObject.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
             Destroy(gameObject);
         }
+
     }
 }

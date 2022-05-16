@@ -39,7 +39,7 @@ public class PlayerInterface : MonoBehaviour
         //roundTime.text = Time.time.ToString();
         startTimer();
         
-        float hp = health.GetHealth();
+        int hp = (int)health.GetHealth();
         textHP.text = $"HP: {hp}";
         
         int kills = statistics.GetEnemiesKilled();
