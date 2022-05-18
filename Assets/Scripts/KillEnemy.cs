@@ -20,11 +20,8 @@ public class KillEnemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-               
-        Debug.Log("weszło w colider");
-        Debug.Log(col.collider.tag.Equals("Enemy"));
-        
-        
+
+
         if(col.collider.tag.Equals("Enemy")){
             Destroy(col.collider.gameObject);
         }
