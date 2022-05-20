@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+  maxHealth: 30
 --- !u!50 &6091663954299866285
 Rigidbody2D:
   serializedVersion: 4
@@ -152,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3289033988313188146, guid: 738ccf2c11e95ef449b127b9e03871d4, type: 3}
+  laser: {fileID: 5225389803192005818, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
 --- !u!114 &6091663954299866280
 MonoBehaviour:
   m_ObjectHideFlags: 0

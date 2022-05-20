@@ -7,17 +7,40 @@ public class BossAttack : MonoBehaviour
     private bool canAttack = true;
 
     public GameObject projectile;
+    public GameObject laser;
+    private GameObject laserInstance;
+    private Health _health;
+
+    private bool canStartLaserForFirstTime = true;
     
-    void Start()
-    {
-        
+    void Start() {
+        _health = gameObject.GetComponent<Health>();
+        laserInstance = Instantiate(laser,
+            transform.position + new Vector3(-transform.localScale.x * 0.6f, 0), Quaternion.identity) as GameObject;
+        laserInstance.SetActive(false);
     }
 
     
-    void Update()
-    {
+    void Update() {
         Attack();
+        CreateLaserForFirstTime();
+        MoveLaser();
     }
+
+    private void MoveLaser() {
+        var laserPosition = transform.position;
+        laserPosition.x += -laserInstance.transform.localScale.x / 2 - transform.localScale.x * 1.1f;
+        laserInstance.transform.position = laserPosition;
+    }
+
+    private void CreateLaserForFirstTime() {
+        if (_health.health < _health.maxHealth / 2 && canStartLaserForFirstTime) {
+            laserInstance.SetActive(true);
+            canStartLaserForFirstTime = false;
+            StartCoroutine(laserFireingTime());
+        }
+    }
+
     private void Attack()
     {
         if (canAttack)
@@ -46,5 +69,18 @@ public class BossAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         canAttack = true;
+    }
+    
+    IEnumerator laserFireingTime()
+    {
+        yield return new WaitForSeconds(3.5f);
+        laserInstance.SetActive(false);
+        StartCoroutine(laserCooldown());
+    }
+    IEnumerator laserCooldown()
+    {
+        yield return new WaitForSeconds(5f);
+        laserInstance.SetActive(true);
+        StartCoroutine(laserFireingTime());
     }
 }
