@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour {
@@ -12,6 +13,10 @@ public class Spawn : MonoBehaviour {
     private bool hasEnded = false;
 
     public UpgradeMenu upMenu;
+
+    [SerializeField] private TextMeshProUGUI up1;
+    [SerializeField] private TextMeshProUGUI up2;
+    [SerializeField] private TextMeshProUGUI up3;
     // Start is called before the first frame update
     void Start() {
     }
@@ -53,8 +58,9 @@ public class Spawn : MonoBehaviour {
 
             
             upMenu.Pause();
-            //upMenu.up1.text = available[0].name;
-            //upMenu.up1.text = available[1].name;
+            up1.text = available[0].name;
+            up2.text = available[1].name;
+            up3.text = available[2].name;
             //upMenu.up1.text = available[2].name;
             if (Input.GetKeyDown(KeyCode.Q))
             {

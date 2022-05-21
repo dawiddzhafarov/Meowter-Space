@@ -2114,6 +2114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSwitchedOn: 0
   UpgradeMenuUI: {fileID: 1172458187}
+  AttackUp: {fileID: 0}
+  DamageUp: {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
+  MajorDamageUp: {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
+  MinorAttackUp: {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
+  MinorDamageUp: {fileID: 11400000, guid: 9ac7d63ab9f74b149b85722fa3c8070d, type: 2}
 --- !u!114 &978550443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2722,7 +2727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1201019436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2916,6 +2921,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
     - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
   upMenu: {fileID: 978550442}
+  up1: {fileID: 1971704652}
+  up2: {fileID: 1449553890}
+  up3: {fileID: 556125678}
 --- !u!4 &1275864365
 Transform:
   m_ObjectHideFlags: 0
@@ -3655,6 +3663,7 @@ GameObject:
   - component: {fileID: 1518589029}
   - component: {fileID: 1518589028}
   - component: {fileID: 1518589027}
+  - component: {fileID: 1518589030}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -3727,12 +3736,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1518589030}
         m_TargetAssemblyTypeName: UpgradeMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: onClick
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1971704652}
           m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3777,6 +3786,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518589025}
   m_CullTransparentMesh: 1
+--- !u!114 &1518589030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518589025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60d8a15da536fe438d2b6a9aace9c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSwitchedOn: 0
+  UpgradeMenuUI: {fileID: 1172458187}
+  AttackUp: {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
+  DamageUp: {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
+  MajorDamageUp: {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
+  MinorAttackUp: {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
+  MinorDamageUp: {fileID: 11400000, guid: 9ac7d63ab9f74b149b85722fa3c8070d, type: 2}
 --- !u!1 &1623781475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,7 +3824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1623781476
 MonoBehaviour:
   m_ObjectHideFlags: 0
