@@ -9,7 +9,9 @@ public class Spawn : MonoBehaviour {
     private int currenWaveNumber = 0;
     private bool canSpawn = true;
     private float nextSpawnTime;
-    
+    private bool hasEnded = false;
+
+    public UpgradeMenu upMenu;
     // Start is called before the first frame update
     void Start() {
     }
@@ -39,8 +41,25 @@ public class Spawn : MonoBehaviour {
                 }
             }
         }
-        else {
-            currentWave.upgrade = currentWave.upgrade.OrderBy(n => Guid.NewGuid()).ToArray(); 
+        else if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && !hasEnded)
+        {
+            hasEnded = true;
+            currentWave.upgrade = currentWave.upgrade.OrderBy(n => Guid.NewGuid()).ToArray();
+            PowerUps[] available = new PowerUps[3];
+            for (int i=0; i < 3; i++)
+            {
+                available[i] = currentWave.upgrade[i];
+            }
+
+            
+            upMenu.Pause();
+            //upMenu.up1.text = available[0].name;
+            //upMenu.up1.text = available[1].name;
+            //upMenu.up1.text = available[2].name;
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                upMenu.Resume();
+            }
             // i bierzemy z tego np 3 upgrade'y i wyświetlamy nie wiem jak to zrobić :V
         }
 
