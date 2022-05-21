@@ -15,11 +15,15 @@ public class Spawn : MonoBehaviour {
 
     public UpgradeMenu upMenu;
 
-    [SerializeField] private TextMeshProUGUI up1;
-    [SerializeField] private TextMeshProUGUI up2;
-    [SerializeField] private TextMeshProUGUI up3;
+    //[SerializeField] private TextMeshProUGUI up1;
+    //[SerializeField] private TextMeshProUGUI up2;
+    //[SerializeField] private TextMeshProUGUI up3;
 
-    public Button test;
+    //public Button test;
+
+    public Button button1;
+    public Button button2;
+    public Button button3;
     // Start is called before the first frame update
     void Start() {
     }
@@ -53,19 +57,23 @@ public class Spawn : MonoBehaviour {
         {
             hasEnded = true;
             currentWave.upgrade = currentWave.upgrade.OrderBy(n => Guid.NewGuid()).ToArray();
-            PowerUps[] available = new PowerUps[3];
-            for (int i=0; i < 3; i++)
-            {
-                available[i] = currentWave.upgrade[i];
-            }
-
-            test.onClick.AddListener(currentWave.upgrade[0].Apply);
-            test.onClick.AddListener(upMenu.Resume);
-            test.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[0].name;
+            
+            button1.onClick.AddListener(currentWave.upgrade[0].Apply);
+            button1.onClick.AddListener(upMenu.Resume);
+            button1.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[0].name;
+            
+            button2.onClick.AddListener(currentWave.upgrade[1].Apply);
+            button2.onClick.AddListener(upMenu.Resume);
+            button2.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[1].name;
+            
+            button3.onClick.AddListener(currentWave.upgrade[2].Apply);
+            button3.onClick.AddListener(upMenu.Resume);
+            button3.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[2].name;
             upMenu.Pause();
+            
             //up1.text = available[0].name;
-            up2.text = available[1].name;
-            up3.text = available[2].name;
+            //up2.text = available[1].name;
+            //up3.text = available[2].name;
             //upMenu.up1.text = available[2].name;
             if (Input.GetKeyDown(KeyCode.Q))
             {

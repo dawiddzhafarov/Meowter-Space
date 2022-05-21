@@ -2921,10 +2921,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
     - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
   upMenu: {fileID: 978550442}
-  up1: {fileID: 1971704652}
-  up2: {fileID: 1449553890}
-  up3: {fileID: 556125678}
-  test: {fileID: 1518589027}
+  button1: {fileID: 1518589027}
+  button2: {fileID: 1992823311}
+  button3: {fileID: 858095039}
 --- !u!4 &1275864365
 Transform:
   m_ObjectHideFlags: 0
