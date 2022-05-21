@@ -28,6 +28,8 @@ public class PlayerInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bulletsPerShot.text = $"Bullets per shot: {playerMovement.numberOfBullets}";
+        
         speed.text = $"Speed: {playerMovement.speed}";
         
         //get damage, dont know if its going to work with upgrades
