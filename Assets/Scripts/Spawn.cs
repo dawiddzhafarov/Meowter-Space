@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawn : MonoBehaviour {
     public Wave[] Waves;
@@ -17,6 +18,8 @@ public class Spawn : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI up1;
     [SerializeField] private TextMeshProUGUI up2;
     [SerializeField] private TextMeshProUGUI up3;
+
+    public Button test;
     // Start is called before the first frame update
     void Start() {
     }
@@ -56,9 +59,11 @@ public class Spawn : MonoBehaviour {
                 available[i] = currentWave.upgrade[i];
             }
 
-            
+            test.onClick.AddListener(currentWave.upgrade[0].Apply);
+            test.onClick.AddListener(upMenu.Resume);
+            test.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[0].name;
             upMenu.Pause();
-            up1.text = available[0].name;
+            //up1.text = available[0].name;
             up2.text = available[1].name;
             up3.text = available[2].name;
             //upMenu.up1.text = available[2].name;

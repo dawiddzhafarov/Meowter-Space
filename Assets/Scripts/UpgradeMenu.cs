@@ -18,7 +18,8 @@ public class UpgradeMenu : MonoBehaviour
     [SerializeField] private ScriptableObject DamageUp;
     [SerializeField] private ScriptableObject MajorDamageUp;
     [SerializeField] private ScriptableObject MinorAttackUp;
-    [SerializeField] private ScriptableObject MinorDamageUp;
+    //[SerializeField] private ScriptableObject MinorDamageUp;
+    [SerializeField] private PowerUps MinorDamageUp;
     private static AttackUp attackScript;
     private static DamageUp damageScript;
     private static DashDistanceUp dashScript;
@@ -63,7 +64,8 @@ public class UpgradeMenu : MonoBehaviour
     public void onClick(TextMeshProUGUI textMeshProUGUI)
     {
         String upgradeName = textMeshProUGUI.text;
-        if (upgradeName.Equals(AttackUp.name))
+        MinorDamageUp.Apply();
+        /*if (upgradeName.Equals(AttackUp.name))
         {
             attackScript.Apply();
         } else if (upgradeName.Equals(DamageUp.name))
@@ -78,6 +80,7 @@ public class UpgradeMenu : MonoBehaviour
         } else if (upgradeName.Equals(MinorDamageUp.name))
         {
             damageScript.Apply();
-        } 
+            MinorDamageUp.Apply();
+        } */
     }
 }
