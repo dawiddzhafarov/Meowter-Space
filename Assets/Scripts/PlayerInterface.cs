@@ -33,7 +33,7 @@ public class PlayerInterface : MonoBehaviour
         speed.text = $"Speed: {playerMovement.speed}";
         
         //get damage, dont know if its going to work with upgrades
-        damage.text = $"Damage: {projectile.damage}";
+        damage.text = $"Damage: {playerMovement.damage}";
         
         //get level
         level.text = "LEVEL: 1";
