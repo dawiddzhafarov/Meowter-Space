@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c027750054d5415fb1a5779adfa040f6, type: 3}
-  m_Name: Minor Damage Up 1
+  m_Name: Minor Damage Up
   m_EditorClassIdentifier: 
   extraDamage: 0.5

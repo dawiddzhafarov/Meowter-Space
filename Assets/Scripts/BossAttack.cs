@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -82,5 +83,9 @@ public class BossAttack : MonoBehaviour
         yield return new WaitForSeconds(5f);
         laserInstance.SetActive(true);
         StartCoroutine(laserFireingTime());
+    }
+
+    private void OnDestroy() {
+        Destroy(laserInstance);
     }
 }
