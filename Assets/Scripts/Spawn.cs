@@ -55,9 +55,13 @@ public class Spawn : MonoBehaviour {
         }
         else if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && !hasEnded)
         {
-            hasEnded = true;
+            //hasEnded = true;
             currentWave.upgrade = currentWave.upgrade.OrderBy(n => Guid.NewGuid()).ToArray();
-           
+            
+            button1.onClick.RemoveAllListeners();
+            button2.onClick.RemoveAllListeners();
+            button3.onClick.RemoveAllListeners();
+            
             button1.onClick.AddListener(currentWave.upgrade[0].Apply);
             button1.onClick.AddListener(upMenu.Resume);
             button1.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[0].name;
@@ -79,6 +83,7 @@ public class Spawn : MonoBehaviour {
             {
                 upMenu.Resume();
             }
+            currenWaveNumber++;
             // i bierzemy z tego np 3 upgrade'y i wyświetlamy nie wiem jak to zrobić :V
         }
 

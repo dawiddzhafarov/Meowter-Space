@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         ghost.transform.position = rb.position + rb.velocity.normalized * dashDistance;
-        if (Input.GetKey(KeyCode.LeftShift) && canDash) {
+        if (Input.GetKey(KeyCode.LeftShift) && canDash && rb.velocity.magnitude !=0 ) {
             rb.MovePosition(rb.position+rb.velocity.normalized*dashDistance);
             //rb.AddForce(rb.velocity.normalized*3f, ForceMode2D.Force);
             canDash = false;

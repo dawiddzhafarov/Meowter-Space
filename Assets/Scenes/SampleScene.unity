@@ -3118,6 +3118,28 @@ MonoBehaviour:
     spawnInterval: 0
     upgrade: []
   - EnemySpawns:
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      position: {x: 10, y: -3, z: 0}
+    spawnInterval: 2
+    upgrade: []
+  - EnemySpawns:
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      position: {x: 10, y: 3, z: 0}
+    spawnInterval: 0
+    upgrade: []
+  - EnemySpawns:
     - enemy: {fileID: 6091663954299866275, guid: 4d3f076a4d3ba8c41a5d8f271396c2ca, type: 3}
       position: {x: 9, y: 0, z: 0}
     spawnInterval: 0
@@ -3125,9 +3147,60 @@ MonoBehaviour:
   - EnemySpawns: []
     spawnInterval: 0
     upgrade:
-    - {fileID: 11400000, guid: 93b2b5ff30a3547429d47abf5d474ccb, type: 2}
+    - {fileID: 11400000, guid: 203e312321a9af9438f5637fadd69680, type: 2}
     - {fileID: 11400000, guid: daef714012600514ca474cf462a5cad4, type: 2}
     - {fileID: 11400000, guid: 4ff03dc9a723f5943b24216a3368f14c, type: 2}
+    - {fileID: 11400000, guid: 7d1fd92aa5b7b1644b6f1a1e537782f8, type: 2}
+  - EnemySpawns:
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -4, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 0, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 4, z: 0}
+    spawnInterval: 0
+    upgrade: []
+  - EnemySpawns: []
+    spawnInterval: 0
+    upgrade:
+    - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
+    - {fileID: 11400000, guid: 93b2b5ff30a3547429d47abf5d474ccb, type: 2}
+    - {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
+    - {fileID: 11400000, guid: 34e1c71e24e432f45875e39cfc65a547, type: 2}
+    - {fileID: 11400000, guid: 34e1c71e24e432f45875e39cfc65a547, type: 2}
+  - EnemySpawns:
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -4, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: -1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 0, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 1, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 2, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 3, z: 0}
+    - enemy: {fileID: 5532806913419258832, guid: efbc2e0affa65ff49b0b09f4cbcde90c, type: 3}
+      position: {x: 10, y: 4, z: 0}
+    spawnInterval: 4
+    upgrade: []
   upMenu: {fileID: 978550442}
   button1: {fileID: 1518589027}
   button2: {fileID: 1992823311}
@@ -3421,7 +3494,7 @@ Transform:
   m_GameObject: {fileID: 1403031150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.5, y: -0.2, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

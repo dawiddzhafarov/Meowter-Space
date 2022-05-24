@@ -60,8 +60,8 @@ public class UpgradeMenu : MonoBehaviour
     
     public void onClick(TextMeshProUGUI textMeshProUGUI)
     {
-        String upgradeName = textMeshProUGUI.text;
-        MinorDamageUp.Apply();
+        //String upgradeName = textMeshProUGUI.text;
+        //MinorDamageUp.Apply();
         /*if (upgradeName.Equals(AttackUp.name))
         {
             attackScript.Apply();
