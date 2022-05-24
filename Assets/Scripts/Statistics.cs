@@ -5,6 +5,8 @@ using UnityEngine;
 public class Statistics
 {
     private static int EnemiesKilled = 0;
+
+    private static int level = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +27,10 @@ public class Statistics
     public int GetEnemiesKilled()
     {
         return EnemiesKilled;
+    }
+
+    public int GetLevel()
+    {
+        return level;
     }
 }

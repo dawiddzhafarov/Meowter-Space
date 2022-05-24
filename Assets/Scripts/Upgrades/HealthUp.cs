@@ -11,6 +11,7 @@ public class HealthUp : PowerUps {
     public override void Apply()
     {
         //healthObj.SetHealth(healthObj.GetHealth() + extraHealth);
-       
+        float currentHealth = player.GetComponent<Health>().GetHealth();
+        player.GetComponent<Health>().SetHealth(currentHealth + extraHealth);
     }
 }

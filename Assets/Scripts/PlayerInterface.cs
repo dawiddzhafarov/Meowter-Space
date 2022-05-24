@@ -17,8 +17,6 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speed;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private TextMeshProUGUI dashDistance;
-    [SerializeField] private Projectile projectile;
-    
     private Statistics statistics = new Statistics();
     private float timer;
     void Start()
@@ -41,7 +39,7 @@ public class PlayerInterface : MonoBehaviour
         level.text = "LEVEL: 1";
         
         //roundTime.text = Time.time.ToString();
-        startTimer();
+        StartTimer();
         
         int hp = (int)health.GetHealth();
         textHP.text = $"HP: {hp}/{health.maxHealth}";
@@ -50,7 +48,7 @@ public class PlayerInterface : MonoBehaviour
         textEnemies.text = $"Enemies killed: {kills}";
     }
 
-    public void startTimer()
+    public void StartTimer()
     {
         int min = Mathf.FloorToInt(Time.time / 60);
         int sec = Mathf.FloorToInt(Time.time % 60);

@@ -57,7 +57,7 @@ public class Spawn : MonoBehaviour {
         {
             hasEnded = true;
             currentWave.upgrade = currentWave.upgrade.OrderBy(n => Guid.NewGuid()).ToArray();
-            Debug.Log(currentWave.upgrade.Length);
+           
             button1.onClick.AddListener(currentWave.upgrade[0].Apply);
             button1.onClick.AddListener(upMenu.Resume);
             button1.GetComponentInChildren<TextMeshProUGUI>().text = currentWave.upgrade[0].name;
