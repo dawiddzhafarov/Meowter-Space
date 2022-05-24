@@ -41,4 +41,9 @@ public class Health : MonoBehaviour
     {
         return stats;
     }
+
+    public void SetHealth(float hp)
+    {
+        health = hp;
+    }
 }

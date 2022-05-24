@@ -3,12 +3,14 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Upgrades/HealthUp")]
 public class HealthUp : PowerUps {
 
-    public int extraHealth;
-    [SerializeField] private Health health;
-    //public Health healthObj;
+    public float extraHealth;
+    
+    //[SerializeField] public GameObject player;
+    //public static Health healthObj = new Health();
+    // nie wiem jak przekazac obiekt Health
     public override void Apply()
     {
-        health.health = health.GetHealth() + extraHealth;
-        
+        //healthObj.SetHealth(healthObj.GetHealth() + extraHealth);
+       
     }
 }

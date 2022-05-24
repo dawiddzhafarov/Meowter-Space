@@ -3130,12 +3130,14 @@ MonoBehaviour:
   - EnemySpawns: []
     spawnInterval: 0
     upgrade:
-    - {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
-    - {fileID: 11400000, guid: 203e312321a9af9438f5637fadd69680, type: 2}
-    - {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
-    - {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
-    - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
     - {fileID: 11400000, guid: 93b2b5ff30a3547429d47abf5d474ccb, type: 2}
+    - {fileID: 11400000, guid: daef714012600514ca474cf462a5cad4, type: 2}
+    - {fileID: 11400000, guid: f4a7e4dd82c155d46881fdaa34a476bf, type: 2}
+    - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
+    - {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
+    - {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
+    - {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
+    - {fileID: 11400000, guid: 203e312321a9af9438f5637fadd69680, type: 2}
     - {fileID: 11400000, guid: 34e1c71e24e432f45875e39cfc65a547, type: 2}
     - {fileID: 11400000, guid: daef714012600514ca474cf462a5cad4, type: 2}
     - {fileID: 11400000, guid: 7d1fd92aa5b7b1644b6f1a1e537782f8, type: 2}
@@ -3450,7 +3452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f2e2b969bc41c74e961e563a498a52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 0
   maxHealth: 100
 --- !u!1 &1411588240
 GameObject:
