@@ -13,14 +13,7 @@ public class UpgradeMenu : MonoBehaviour
 
     public bool isSwitchedOn = false;
     public GameObject UpgradeMenuUI;
-
     public GameObject HudUi;
-    // Start is called before the first frame update
-    [SerializeField] private ScriptableObject AttackUp;
-    [SerializeField] private ScriptableObject DamageUp;
-    [SerializeField] private ScriptableObject MajorDamageUp;
-    [SerializeField] private ScriptableObject MinorAttackUp;
-    //[SerializeField] private ScriptableObject MinorDamageUp;
     [SerializeField] private PowerUps MinorDamageUp;
     private static AttackUp attackScript;
     private static DamageUp damageScript;

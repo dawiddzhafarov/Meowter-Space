@@ -2199,10 +2199,6 @@ MonoBehaviour:
   isSwitchedOn: 0
   UpgradeMenuUI: {fileID: 1172458187}
   HudUi: {fileID: 724146865}
-  AttackUp: {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
-  DamageUp: {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
-  MajorDamageUp: {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
-  MinorAttackUp: {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
   MinorDamageUp: {fileID: 11400000, guid: 203e312321a9af9438f5637fadd69680, type: 2}
 --- !u!114 &978550443
 MonoBehaviour:
@@ -3052,7 +3048,6 @@ MonoBehaviour:
   speed: {fileID: 1345569118}
   playerMovement: {fileID: 1403031151}
   dashDistance: {fileID: 1139601883}
-  projectile: {fileID: 3637777280334793896, guid: 738ccf2c11e95ef449b127b9e03871d4, type: 3}
 --- !u!1 &1275864363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,16 +3127,7 @@ MonoBehaviour:
     upgrade:
     - {fileID: 11400000, guid: 93b2b5ff30a3547429d47abf5d474ccb, type: 2}
     - {fileID: 11400000, guid: daef714012600514ca474cf462a5cad4, type: 2}
-    - {fileID: 11400000, guid: f4a7e4dd82c155d46881fdaa34a476bf, type: 2}
-    - {fileID: 11400000, guid: d8b1319bd5c7f20409063013d99be6da, type: 2}
-    - {fileID: 11400000, guid: 1a19aa458d135f74ab8c1ae095ad8040, type: 2}
-    - {fileID: 11400000, guid: 3e7503e6534e5d940bf46ba0788db1d9, type: 2}
-    - {fileID: 11400000, guid: 9ff52fa977b58ab468a3596e61929cbb, type: 2}
-    - {fileID: 11400000, guid: 203e312321a9af9438f5637fadd69680, type: 2}
-    - {fileID: 11400000, guid: 34e1c71e24e432f45875e39cfc65a547, type: 2}
-    - {fileID: 11400000, guid: daef714012600514ca474cf462a5cad4, type: 2}
-    - {fileID: 11400000, guid: 7d1fd92aa5b7b1644b6f1a1e537782f8, type: 2}
-    - {fileID: 11400000, guid: cdf51ca1653d7e841abce5790d39de45, type: 2}
+    - {fileID: 11400000, guid: 4ff03dc9a723f5943b24216a3368f14c, type: 2}
   upMenu: {fileID: 978550442}
   button1: {fileID: 1518589027}
   button2: {fileID: 1992823311}
@@ -3310,6 +3296,7 @@ GameObject:
   - component: {fileID: 1403031152}
   - component: {fileID: 1403031151}
   - component: {fileID: 1403031156}
+  - component: {fileID: 1403031157}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3454,6 +3441,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+--- !u!114 &1403031157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403031150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed8024bfe34f3e419b13fa419677199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1411588240
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ public class Health : MonoBehaviour
 {
     public float health;
     public float maxHealth;
-
     public Statistics stats = new Statistics();
     // Start is called before the first frame update
     void Start() {
@@ -22,6 +21,10 @@ public class Health : MonoBehaviour
             if(gameObject.tag.Equals("Enemy")){
                 stats.AddEnemiesKilled();
             }
+            else 
+            {
+                gameObject.GetComponent<SceneSwitcher>().DiedScene();
+            }
         }
     }
 
@@ -30,20 +33,33 @@ public class Health : MonoBehaviour
         health -= damage;
         
     }
-
-    public float GetHealth()
-    {
-        return health;
-        
-    }
-
+    
     public Statistics getStats()
     {
         return stats;
     }
-
+    
+    public float GetHealth()
+    {
+        return health;
+    }
     public void SetHealth(float hp)
     {
-        health = hp;
+        if (hp > health)
+        {
+            health = maxHealth;
+        }
+        else
+        {
+            health = hp;
+        }
+    }
+    public float GetMaxHealth()
+    {
+        return maxHealth;
+    }
+    public void SetMaxHealth(float hp)
+    {
+        maxHealth = hp;
     }
 }

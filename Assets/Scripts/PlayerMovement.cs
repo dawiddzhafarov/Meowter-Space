@@ -7,20 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private bool canAttack = true;
     public GameObject projectile;
-    private float dashTime = 2;
-    
-    //private bool isDashed = false;
     private bool canDash = true;
     public float dashDistance;
-
     public int numberOfBullets;
     public float damage;
-
     public float speed;
-
-    private float timer = 0.0f;
-
-	public GameObject ghost;
+    public GameObject ghost;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
        
 		//ghost.rb.MovePosition(rb.position+rb.velocity.normalized*dashDistance);
     }
-
     private void Attack()
     {
         if (canAttack) {
@@ -52,9 +43,7 @@ public class PlayerMovement : MonoBehaviour
                 throwableWeapon.GetComponent<Projectile>().damage = damage;
                 throwableWeapon.name = "ThrowableWeapon";
             }
-
-
-        StartCoroutine(AttackCooldown());
+            StartCoroutine(AttackCooldown());
         }
     }
 
@@ -71,8 +60,7 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxis("Vertical"),
             0        ) * speed);
     }
-
-
+    
     void Dash() {
         
         if(!canDash) 
@@ -88,28 +76,11 @@ public class PlayerMovement : MonoBehaviour
             //rb.AddForce(rb.velocity.normalized*3f, ForceMode2D.Force);
             canDash = false;
             StartCoroutine(DashCooldown());
-
-
         }
     }
-    
     IEnumerator DashCooldown()
     {
         yield return new WaitForSeconds(2f);
         canDash = true;
     }
-
-    /*void Dash()
-    {
-        if (Input.GetKey(KeyCode.LeftShift) && !isDashed)
-        {
-            float newSpeed = speed + 3;
-            rb.velocity=(new Vector3(
-                Input.GetAxis("Horizontal"),
-                Input.GetAxis("Vertical"),
-                0        ) * newSpeed);
-            
-        }
-    }
-    */
 }
