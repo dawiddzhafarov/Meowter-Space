@@ -16,6 +16,7 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI bulletsPerShot;
     [SerializeField] private TextMeshProUGUI speed;
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private TextMeshProUGUI dashDistance;
     [SerializeField] private Projectile projectile;
     
     private Statistics statistics = new Statistics();
@@ -31,7 +32,8 @@ public class PlayerInterface : MonoBehaviour
         bulletsPerShot.text = $"Bullets per shot: {playerMovement.numberOfBullets}";
         
         speed.text = $"Speed: {playerMovement.speed}";
-        
+
+        dashDistance.text = $"Dash distance: {playerMovement.dashDistance}";
         //get damage, dont know if its going to work with upgrades
         damage.text = $"Damage: {playerMovement.damage}";
         
@@ -42,7 +44,7 @@ public class PlayerInterface : MonoBehaviour
         startTimer();
         
         int hp = (int)health.GetHealth();
-        textHP.text = $"HP: {hp}";
+        textHP.text = $"HP: {hp}/{health.maxHealth}";
         
         int kills = statistics.GetEnemiesKilled();
         textEnemies.text = $"Enemies killed: {kills}";
