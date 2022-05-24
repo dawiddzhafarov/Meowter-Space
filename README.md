@@ -13,7 +13,7 @@ TODO:
       Dodałem klasę abstrakcyjną wraz z kilkoma przykładowymi upgrade'ami. https://www.youtube.com/watch?v=PkNRPOrtyls&ab_channel=BMo (Dodać więcej opierając się na tym)
       
 9) ~~Menu wyboru upgrade'u~~ - done (klawisz "Q")
-       Tekst się pojawia w rogu ekranu :V
+       ~~Tekst się pojawia w rogu ekranu :V
        Połączyć menu z falami i upgradeami.
 10) ~~Dash pozwalający unikać pocisków bo bez tego troche mało dynamiczna oraz trudna :V plus dzięki temu więcej~~ upgrade'ów można dodać
       **Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł**
@@ -21,3 +21,5 @@ TODO:
       
 11) ~~Menu pauzy~~ - done
 12) Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu
+13) ~~Ekran po śmierci gracza, zmiana scen przy użyciu przycisków~~
+14) Naprawić timer by startował przy starcie rozgrywki, dodać go do statystyk, dodać do klasy Statistics tak by można było pobierać dane do wyświetlania
