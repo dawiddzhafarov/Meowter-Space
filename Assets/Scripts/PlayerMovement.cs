@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public int numberOfBullets;
     public float damage;
     public float speed;
+    public float attackCooldown;
+    public float dashCooldown;
     public GameObject ghost;
     // Start is called before the first frame update
     void Start()
@@ -49,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator AttackCooldown()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
     
@@ -80,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator DashCooldown()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
 }

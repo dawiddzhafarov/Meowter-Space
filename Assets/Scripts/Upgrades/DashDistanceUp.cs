@@ -7,6 +7,7 @@ public class DashDistanceUp : PowerUps {
     public float extraDashDistance;
     
     public override void Apply() {
+        var player = GameObject.Find("Player");
         player.GetComponent<PlayerMovement>().dashDistance += extraDashDistance;
     }
 }

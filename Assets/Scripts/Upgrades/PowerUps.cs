@@ -6,11 +6,13 @@ using UnityEngine;
 
 public abstract class PowerUps : ScriptableObject {
     
-    protected GameObject player;
+    //protected GameObject player;
+    //public GameObject player;
 
     private void OnEnable() {
-        player = GameObject.Find("Player");
+        //player = GameObject.Find("Player");
     }
+    
 
     public abstract void Apply();
 

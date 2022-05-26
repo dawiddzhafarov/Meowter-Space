@@ -19,7 +19,11 @@ public class LaserDealDamage : MonoBehaviour {
         
     }
 
-    
+    private void OnEnable() {
+        canDealDamage = true;
+    }
+
+
     private void OnTriggerStay2D(Collider2D other) {
         
         if (canDealDamage) {

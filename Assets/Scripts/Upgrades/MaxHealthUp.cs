@@ -7,6 +7,7 @@ public class MaxHealthUp : PowerUps {
     
     public override void Apply()
     {
+        var player = GameObject.Find("Player");
         float currentMaxHealth = player.GetComponent<Health>().GetMaxHealth();
         player.GetComponent<Health>().SetMaxHealth(currentMaxHealth + extraHealth);
     }

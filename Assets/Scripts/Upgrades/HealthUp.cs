@@ -10,6 +10,7 @@ public class HealthUp : PowerUps {
     // nie wiem jak przekazac obiekt Health
     public override void Apply()
     {
+        var player = GameObject.Find("Player");
         //healthObj.SetHealth(healthObj.GetHealth() + extraHealth);
         float currentHealth = player.GetComponent<Health>().GetHealth();
         player.GetComponent<Health>().SetHealth(currentHealth + extraHealth);
