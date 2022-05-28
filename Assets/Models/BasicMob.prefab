@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackColldown: 1
+  attackDamage: 1
   projectile: {fileID: 3289033988313188146, guid: 738ccf2c11e95ef449b127b9e03871d4, type: 3}
 --- !u!114 &5532806913419258842
 MonoBehaviour:

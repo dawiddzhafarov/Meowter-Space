@@ -6,6 +6,7 @@ public class MobAttack : MonoBehaviour
 {
     private bool canAttack = true;
     public float attackColldown;
+    public float attackDamage;
 
     public GameObject projectile;
     
@@ -29,6 +30,7 @@ public class MobAttack : MonoBehaviour
             Vector2 direction = new Vector2(-1, 0);
             throwableWeapon.GetComponent<Projectile>().direction = direction;
             throwableWeapon.GetComponent<Projectile>().team = "Enemy";
+            throwableWeapon.GetComponent<Projectile>().damage = attackDamage;
 
             throwableWeapon.name = "ThrowableWeapon1";
 
