@@ -26,3 +26,4 @@ TODO:
 15) Laser aktualnie przysłania stateczek, zrobić go pod stateczkiem
 16) Tarczownik nie reaguje na kolizję z tarczą z asseta, ponadto nadal widać tarczę tą białą, domyślną.
 17) Tło kamery mogłoby się poruszać
+18) W settings naprawić guziki
