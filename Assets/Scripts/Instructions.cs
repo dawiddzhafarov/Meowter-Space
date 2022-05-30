@@ -10,7 +10,7 @@ public class Instructions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InstructionsCanvas.SetActive(false);
     }
 
     // Update is called once per frame

@@ -10,7 +10,7 @@ public class SettingsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SettingsCanvas.SetActive(false);
     }
 
     // Update is called once per frame
