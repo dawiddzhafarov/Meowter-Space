@@ -25,3 +25,4 @@ TODO:
 14) Naprawić timer by startował przy starcie rozgrywki, dodać go do statystyk, dodać do klasy Statistics tak by można było pobierać dane do wyświetlania
 15) Laser aktualnie przysłania stateczek, zrobić go pod stateczkiem
 16) Tarczownik nie reaguje na kolizję z tarczą z asseta, ponadto nadal widać tarczę tą białą, domyślną.
+17) Tło kamery mogłoby się poruszać
