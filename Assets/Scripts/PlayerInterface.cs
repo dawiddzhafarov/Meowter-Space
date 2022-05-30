@@ -17,6 +17,8 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speed;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private TextMeshProUGUI dashDistance;
+    [SerializeField] private TextMeshProUGUI dashCooldown;
+    [SerializeField] private TextMeshProUGUI attackSpeed;
     private Statistics statistics = new Statistics();
     private float timer;
     void Start()
@@ -27,6 +29,10 @@ public class PlayerInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        attackSpeed.text = $"Attack Speed: {playerMovement.attackCooldown}";
+        
+        dashCooldown.text = $"Dash Cooldown: {playerMovement.dashCooldown}";
+        
         bulletsPerShot.text = $"Bullets per shot: {playerMovement.numberOfBullets}";
         
         speed.text = $"Speed: {playerMovement.speed}";
