@@ -2574,9 +2574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e6009ff9c9ddc44ba4eb40f4d9f1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCanvas: {fileID: 268130793}
+  MenuCanvas: {fileID: 399597015}
   isSwitchedOn: 0
-  InstructionsCanvas: {fileID: 942335428}
+  InstructionsCanvas: {fileID: 1573661279}
 --- !u!1 &1573661279
 GameObject:
   m_ObjectHideFlags: 0
