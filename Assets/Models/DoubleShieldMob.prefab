@@ -114,8 +114,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5615015078890663297, guid: 2ad1ba5385952aa4899ac55b8c819a15, type: 3}
       propertyPath: m_Name
-      value: Circle
+      value: DoubleShieldMob
       objectReference: {fileID: 0}
+    - target: {fileID: 5615015078890663306, guid: 2ad1ba5385952aa4899ac55b8c819a15, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 91bffdf00a4e5db4cb2f39ce05c9aab3, type: 3}
     - target: {fileID: 5615015078890663307, guid: 2ad1ba5385952aa4899ac55b8c819a15, type: 3}
       propertyPath: m_RootOrder
       value: 0

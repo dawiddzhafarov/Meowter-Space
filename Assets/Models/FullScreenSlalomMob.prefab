@@ -9,7 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       propertyPath: m_Name
-      value: BasicMob2
+      value: FullScreenSlalomMob
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532806913419258844, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.25943398
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532806913419258844, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.25943398
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532806913419258844, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5532806913419258845, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       propertyPath: m_RootOrder
