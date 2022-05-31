@@ -22,8 +22,9 @@ TODO:
 11) ~~Menu pauzy~~ - done
 12) Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu
 13) ~~Ekran po śmierci gracza, zmiana scen przy użyciu przycisków~~
-14) Naprawić timer by startował przy starcie rozgrywki, dodać go do statystyk, dodać do klasy Statistics tak by można było pobierać dane do wyświetlania
+14) ~~Naprawić timer by startował przy starcie rozgrywki~~ - done
 15) Laser aktualnie przysłania stateczek, zrobić go pod stateczkiem
 16) Tarczownik nie reaguje na kolizję z tarczą z asseta, ponadto nadal widać tarczę tą białą, domyślną.
 17) Tło kamery mogłoby się poruszać
 18) W settings naprawić guziki
+19) Do ekranu po śmierci dodać statystyki
