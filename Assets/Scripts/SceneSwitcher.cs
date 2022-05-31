@@ -24,7 +24,9 @@ public class SceneSwitcher : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
-        // timer should start counting after the game has started, not earlier.
+        Statistics stats = new Statistics();
+        stats.Reset(); // reset kills and level
+        stats.resetTimer(); // reset the timer
     }
 
     public void ExitGame()
@@ -35,8 +37,6 @@ public class SceneSwitcher : MonoBehaviour
     public void DiedScene()
     {
         SceneManager.LoadScene("DiedScene");
-        //kills.text = $"Kills: {statistics.GetEnemiesKilled()}";
-        //level.text = $"Levels passed: {statistics.GetLevel()}";
     }
 }
     

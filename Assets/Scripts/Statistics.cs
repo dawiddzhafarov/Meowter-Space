@@ -1,24 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Statistics
 {
     private static int EnemiesKilled = 0;
-
     private static int level = 1;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void AddEnemiesKilled()
     {
         EnemiesKilled++;
@@ -32,5 +18,32 @@ public class Statistics
     public int GetLevel()
     {
         return level;
+    }
+
+    public void Reset()
+    {
+        EnemiesKilled = 0;
+        level = 1;
+    }
+
+    public void resetTimer()
+    {
+        PlayerInterface.time = 0f;
+    }
+
+    public float GetTime()
+    {
+        return PlayerInterface.time;
+    }
+
+    public string GetTimeString()
+    {
+        int min = Mathf.FloorToInt(PlayerInterface.time / 60);
+        int sec = Mathf.FloorToInt(PlayerInterface.time% 60);
+        if ((sec >= 0 && sec <= 9) && (min >= 0 && min <= 9))
+        {
+            return "0" + min + ":0" + sec;
+        }
+        return min + ":" + sec;
     }
 }

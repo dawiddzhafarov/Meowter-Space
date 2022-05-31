@@ -20,7 +20,7 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dashCooldown;
     [SerializeField] private TextMeshProUGUI attackSpeed;
     private Statistics statistics = new Statistics();
-    public float time = 0f;
+    public static float time = 0f;
     void Start()
     {
         
@@ -70,5 +70,10 @@ public class PlayerInterface : MonoBehaviour
         {
             roundTime.text = min + ":" + sec;
         }
+    }
+
+    public void ResetTimer()
+    {
+        time = 0f;
     }
 }
