@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-
     //[SerializeField] private TextMeshProUGUI kills;
     //private Statistics statistics;
     // [SerializeField] private TextMeshProUGUI level;
