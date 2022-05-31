@@ -20,7 +20,7 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dashCooldown;
     [SerializeField] private TextMeshProUGUI attackSpeed;
     private Statistics statistics = new Statistics();
-    public float timer;
+    public float time = 0f;
     void Start()
     {
         
@@ -29,6 +29,8 @@ public class PlayerInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
+        
         attackSpeed.text = $"Attack Speed: {1 / playerMovement.attackCooldown}";
         
         dashCooldown.text = $"Dash Cooldown: {playerMovement.dashCooldown}";
@@ -45,7 +47,7 @@ public class PlayerInterface : MonoBehaviour
         level.text = "LEVEL: 1";
         
         //roundTime.text = Time.time.ToString();
-        //StartTimer();
+        StartTimer();
         
         int hp = (int)health.GetHealth();
         textHP.text = $"HP: {hp}/{health.maxHealth}";
@@ -56,8 +58,10 @@ public class PlayerInterface : MonoBehaviour
 
     public void StartTimer()
     {
-        int min = Mathf.FloorToInt(Time.time / 60);
-        int sec = Mathf.FloorToInt(Time.time % 60);
+        //int min = Mathf.FloorToInt(Time.time  / 60);
+        //int sec = Mathf.FloorToInt(Time.time % 60);
+        int min = Mathf.FloorToInt(time / 60);
+        int sec = Mathf.FloorToInt(time% 60);
         if ((sec >= 0 && sec <= 9) && (min >= 0 && min <= 9))
         {
             roundTime.text = "0" + min + ":0" + sec;
