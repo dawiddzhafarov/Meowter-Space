@@ -27,4 +27,4 @@ TODO:
 16) Tarczownik nie reaguje na kolizję z tarczą z asseta, ponadto nadal widać tarczę tą białą, domyślną.
 17) Tło kamery mogłoby się poruszać
 18) W settings naprawić guziki
-19) Do ekranu po śmierci dodać statystyki
+19) ~~Do ekranu po śmierci dodać statystyki~~ - done
