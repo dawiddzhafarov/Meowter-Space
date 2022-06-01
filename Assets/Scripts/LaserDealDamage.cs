@@ -26,7 +26,7 @@ public class LaserDealDamage : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D other) {
         
-        if (canDealDamage) {
+        if (canDealDamage && other.tag.Equals("Player")) {
             canDealDamage = false;
             other.gameObject.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
             StartCoroutine(AttackCooldown());
