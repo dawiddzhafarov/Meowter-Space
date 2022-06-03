@@ -37,21 +37,27 @@ public class TeleportingBossController : MonoBehaviour {
         teleportMarker.transform.position= new Vector3(Random.Range(-8, 8), Random.Range(-3, 3));
         yield return new WaitForSeconds(1);
         transform.position = teleportMarker.transform.position;
+        teleportMarker.transform.position = transform.position;
 
-        for (int i = 0; i < numberOfBullets; i++) {
-            var x = Mathf.Cos(i * 2*Mathf.PI / numberOfBullets);
-            var y = Mathf.Sin(i * 2 * Mathf.PI / numberOfBullets);
-                
-            GameObject throwableWeapon = Instantiate(projectile,
-                transform.position + new Vector3(x, y), Quaternion.identity) as GameObject;
-            throwableWeapon.GetComponent<Projectile>().direction = new Vector3(x,  y);
-            throwableWeapon.GetComponent<Projectile>().team = "Enemy";
-            throwableWeapon.transform.localScale = new Vector3(1, 1, 1);
-        }
+        Shoot();
         StartCoroutine(TeleportCooldown());
     }
 
-    private void OnDestroy() {
-        Destroy(teleportMarker);
+    private void Shoot() {
+        for (int i = 0; i < numberOfBullets; i++) {
+            var x = Mathf.Cos(i * 2 * Mathf.PI / numberOfBullets);
+            var y = Mathf.Sin(i * 2 * Mathf.PI / numberOfBullets);
+
+            GameObject throwableWeapon = Instantiate(projectile,
+                transform.position + new Vector3(x, y), Quaternion.identity) as GameObject;
+            throwableWeapon.GetComponent<Projectile>().direction = new Vector3(x, y);
+            throwableWeapon.GetComponent<Projectile>().team = "Enemy";
+            throwableWeapon.transform.localScale = new Vector3(1, 1, 1);
+            throwableWeapon.GetComponent<Projectile>().damage = 5;
+        }
     }
+
+    //private void OnDestroy() {
+   //     Destroy(teleportMarker);
+    //}
 }

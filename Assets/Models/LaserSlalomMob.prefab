@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1133362360982005765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7994836110866145727}
+    m_Modifications:
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942655624769446383, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225389803192005818, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+      propertyPath: m_Name
+      value: Laser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+--- !u!1 &5133772928085941439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5225389803192005818, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+  m_PrefabInstance: {fileID: 1133362360982005765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2466608682839460450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78,6 +140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b93378c93126364aa6e2bc65e6c8545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laser: {fileID: 5225389803192005818, guid: 7f29869bf8342e44ca1e2907453e73ec, type: 3}
+  laserInstance: {fileID: 5133772928085941439}
   laserFireingTime: 5
   laserCooldown: 2
+--- !u!4 &7994836110866145727 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5532806913419258845, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+  m_PrefabInstance: {fileID: 2466608682839460450}
+  m_PrefabAsset: {fileID: 0}
