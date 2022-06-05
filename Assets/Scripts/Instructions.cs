@@ -22,7 +22,6 @@ public class Instructions : MonoBehaviour
     {
         MenuCanvas.SetActive(true);
         InstructionsCanvas.SetActive(false);
-        //Time.timeScale = 1f;
         isSwitchedOn = false;
     }
 
@@ -30,7 +29,6 @@ public class Instructions : MonoBehaviour
     {
         MenuCanvas.SetActive(false);
         InstructionsCanvas.SetActive(true);
-        //Time.timeScale = 0f;
         isSwitchedOn = true;
     }
 }
