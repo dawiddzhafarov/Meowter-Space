@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -11,7 +8,7 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textHP;
     [SerializeField] private TextMeshProUGUI textEnemies;
     [SerializeField] private TextMeshProUGUI roundTime;
-    [SerializeField] private TextMeshProUGUI level;
+    //[SerializeField] private TextMeshProUGUI level;
     [SerializeField] private TextMeshProUGUI damage;
     [SerializeField] private TextMeshProUGUI bulletsPerShot;
     [SerializeField] private TextMeshProUGUI speed;
@@ -40,13 +37,9 @@ public class PlayerInterface : MonoBehaviour
         speed.text = $"Speed: {playerMovement.speed}";
 
         dashDistance.text = $"Dash distance: {playerMovement.dashDistance}";
-        //get damage, dont know if its going to work with upgrades
+        
         damage.text = $"Damage: {playerMovement.damage}";
         
-        //get level
-        level.text = "LEVEL: 1";
-        
-        //roundTime.text = Time.time.ToString();
         StartTimer();
         
         int hp = (int)health.GetHealth();

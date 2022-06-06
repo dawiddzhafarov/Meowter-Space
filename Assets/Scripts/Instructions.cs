@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Instructions : MonoBehaviour
 {
     public GameObject MenuCanvas;
-    public bool isSwitchedOn;
+  
     public GameObject InstructionsCanvas;
     // Start is called before the first frame update
     void Start()
@@ -22,13 +20,12 @@ public class Instructions : MonoBehaviour
     {
         MenuCanvas.SetActive(true);
         InstructionsCanvas.SetActive(false);
-        isSwitchedOn = false;
+        
     }
 
     public void ShowInstructions()
     {
         MenuCanvas.SetActive(false);
         InstructionsCanvas.SetActive(true);
-        isSwitchedOn = true;
     }
 }

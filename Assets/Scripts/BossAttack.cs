@@ -1,17 +1,13 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAttack : MonoBehaviour
 {
     private bool canAttack = true;
-
     public GameObject projectile;
     //public GameObject laser;
     public GameObject laserInstance;
     private Health _health;
-
     private bool canStartLaserForFirstTime = true;
     
     void Start() {
@@ -20,7 +16,6 @@ public class BossAttack : MonoBehaviour
             //transform.position + new Vector3(-transform.localScale.x * 0.6f, 0), Quaternion.identity) as GameObject;
         laserInstance.SetActive(false);
     }
-
     
     void Update() {
         Attack();

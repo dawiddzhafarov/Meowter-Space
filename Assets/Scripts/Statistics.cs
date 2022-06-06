@@ -3,8 +3,7 @@ using UnityEngine;
 public class Statistics
 {
     private static int EnemiesKilled = 0;
-    private static int level = 1;
-    
+
     public void AddEnemiesKilled()
     {
         EnemiesKilled++;
@@ -14,16 +13,10 @@ public class Statistics
     {
         return EnemiesKilled;
     }
-
-    public int GetLevel()
-    {
-        return level;
-    }
-
+    
     public void Reset()
     {
         EnemiesKilled = 0;
-        level = 1;
     }
 
     public void resetTimer()
