@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -167936118995983596, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: upBorder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -167936118995983596, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: downBorder
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 5532806913419258832, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       propertyPath: m_Name
       value: FullScreenSlalomMob
