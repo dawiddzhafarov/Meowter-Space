@@ -66,7 +66,7 @@ public class FactoryBossController : MonoBehaviour
     IEnumerator SpawnEnemy()
     {
         Instantiate(spawnableEnemies[Random.Range(0,spawnableEnemies.Length)], new Vector3(8f, Random.Range(4,-4), 0), shield.transform.rotation);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         StartCoroutine(SpawnEnemy());
     }
 }
