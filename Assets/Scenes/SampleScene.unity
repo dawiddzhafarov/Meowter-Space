@@ -2860,6 +2860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89308e5b9062fb40b86d59e6ce12c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathClip: {fileID: 0}
 --- !u!1 &954387111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,7 +3048,7 @@ RectTransform:
   m_Children:
   - {fileID: 1172458190}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3846,7 +3847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289153513
 GameObject:
@@ -4220,6 +4221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f2e2b969bc41c74e961e563a498a52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dead: {fileID: 0}
   health: 0
   maxHealth: 100
 --- !u!114 &1403031157
@@ -5230,7 +5232,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2d8c20dcb94166749bd982e94e08c3ed, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.394
+  m_Volume: 0.269
   m_Pitch: 1
   Loop: 0
   Mute: 0

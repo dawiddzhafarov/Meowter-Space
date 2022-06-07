@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class KillEnemy : MonoBehaviour
 {
+
+    public AudioClip deathClip;
     // Start is called before the first frame update
     void Start()
     {

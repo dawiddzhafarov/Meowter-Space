@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FullScreenSlalomMob
       objectReference: {fileID: 0}
+    - target: {fileID: 5532806913419258842, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: 7362b2d26649e6e40bd91a94b024b77d, type: 3}
     - target: {fileID: 5532806913419258844, guid: 8813885a36da92a429bb9c1a7a804ff6, type: 3}
       propertyPath: m_Color.b
       value: 0.25943398

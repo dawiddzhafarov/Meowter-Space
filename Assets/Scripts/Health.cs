@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public AudioClip dead;
     public float health;
     public float maxHealth;
     public Statistics stats = new Statistics();
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
     {
         if (health <= 0)
         {
+            AudioSource.PlayClipAtPoint (dead, transform.position);
             Destroy(gameObject);
             if(gameObject.tag.Equals("Enemy")){
                 stats.AddEnemiesKilled();
