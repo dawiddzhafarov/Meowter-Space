@@ -5,42 +5,29 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-
-	[SerializeField] private Button musicOn;
-	[SerializeField] private Button musicOff;
-	[SerializeField] private Button soundOn;
-	[SerializeField] private Button soundOff;
+	
 	private bool mutedMusic = false;
-	private bool mutedSound = false;
-
+	//[SerializeField] private AudioSource music1;
+	//[SerializeField] private AudioSource music2;
 	// Start is called before the first frame update
     void Start()
     {
         
     }
 
-    public void OnButtonPress()
+    public void Mute()
     {
-	    if (mutedMusic == false)
+	    if (!mutedMusic)
 	    {
+		    AudioListener.pause = true;
+		    AudioListener.volume = 0;
 		    mutedMusic = true;
-		    AudioListener.pause = true;
 	    }
 	    else
 	    {
+		    AudioListener.pause = false;
+		    AudioListener.volume = 1;
 		    mutedMusic = false;
-		    AudioListener.pause = false;
-	    }
-	    
-	    if (mutedSound == false)
-	    {
-		    mutedSound = true;
-		    AudioListener.pause = true;
-	    }
-	    else
-	    {
-		    mutedSound= false;
-		    AudioListener.pause = false;
 	    }
     }
    

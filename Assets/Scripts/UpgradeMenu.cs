@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UpgradeMenu : MonoBehaviour
 {
-
+    public AudioSource levelUp;
     public bool isSwitchedOn = false;
     public GameObject UpgradeMenuUI;
     public GameObject HudUi;
@@ -15,6 +15,7 @@ public class UpgradeMenu : MonoBehaviour
  
     void Start()
     {
+        
         Resume();
     }
 
@@ -26,6 +27,7 @@ public class UpgradeMenu : MonoBehaviour
 
     public void Resume()
     {
+        
         HudUi.SetActive(true);
         UpgradeMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -34,6 +36,7 @@ public class UpgradeMenu : MonoBehaviour
 
     public void Pause()
     {
+        levelUp.Play();
         HudUi.SetActive(false);
         UpgradeMenuUI.SetActive(true);
         Time.timeScale = 0f;
