@@ -22,7 +22,7 @@ TODO:
       **Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł**
       Można dodać powidok gracza pokazujący gdzie się znajdzie po dashu/blinku i widoczny tylko wtedy gdy dash nie jest na cooldownie ~~
 11) ~~Menu pauzy~~ - done
-12) Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu
+12) ~~Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu~~ - done
 13) ~~Ekran po śmierci gracza, zmiana scen przy użyciu przycisków~~ - done
 14) ~~Naprawić timer by startował przy starcie rozgrywki~~ - done
 15) ~~Laser aktualnie przysłania stateczek, zrobić go pod stateczkiem~~  - done
