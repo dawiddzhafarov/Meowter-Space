@@ -1,4 +1,7 @@
 # roguelikeUnityGame
+Game created as a project for Computer Game class. The ready-to-play game is located in the build directory.
+
+
 
 TODO:
 1) ~~Aby pociski przenikały przez statki ale znikały przy kolizji.~~ -done
