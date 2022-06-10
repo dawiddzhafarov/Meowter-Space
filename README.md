@@ -6,21 +6,21 @@ Game created as a project for Computer Game class. The ready-to-play game is loc
 TODO:
 1) ~~Aby pociski przenikały przez statki ale znikały przy kolizji.~~ -  done
 2) ~~Dodać podstawowego mobka co leci w lewo, strzela i znika gdy za ekran przejdzie~~ - done
-3) ~~Tworzenie scenaruszy tzn. że teraz poleci 5 mobków, potem 3 silniejsze, możliwość wyboru upgrade'u i boss itp  ~~- done
+3) ~~Tworzenie scenaruszy tzn. że teraz poleci 5 mobków, potem 3 silniejsze, możliwość wyboru upgrade'u i boss itp.~~ -done
 4) ~~Coś zrobić aby mobek nie przesuwał gracza oraz też aby gracz nie mógł mobka zablokować przed dotarciem do krawędzi ekranu~~ - done
-5) ~~Ui typu hp i staty z boku ~~ - done 
-  -~Z boku takie rzeczy jak dmg, speed gracza.~~ - done
+5) ~~Ui typu hp i staty z boku~~ - done
+  ~~Z boku takie rzeczy jak dmg, speed gracza.~~ - done
       ~~-Pomyśleć nad zastąpieniem tekstu jakimiś grafikami~~ - done
 6) ~~Podstawowe menu~~ - done 
 7) ~~Kilka przykładowych upgrade'ów na start aby można było dalej na nich operować~~. {p. dmgUp, speedUp, bullets++, ??? }
-     ~~Dodałem klasę abstrakcyjną wraz z kilkoma przykładowymi upgrade'ami. https://www.youtube.com/watch?v=PkNRPOrtyls&ab_channel=BMo (Dodać więcej opierając się na tym) ~~
+     ~~Dodałem klasę abstrakcyjną wraz z kilkoma przykładowymi upgrade'ami. https://www.youtube.com/watch?v=PkNRPOrtyls&ab_channel=BMo (Dodać więcej opierając się na tym)~~ - done
       
 9) ~~Menu wyboru upgrade'u~~ - done
        ~~Tekst się pojawia w rogu ekranu :V
        Połączyć menu z falami i upgradeami.
 10) ~~Dash pozwalający unikać pocisków bo bez tego troche mało dynamiczna oraz trudna, plus dzięki temu więcej upgrade'ów można dodać
       **Dash zrobiony jako blink czyli natychmiastowe przemieszczenie-uważać aby gracz w ścianę nie wszczedł**
-      Można dodać powidok gracza pokazujący gdzie się znajdzie po dashu/blinku i widoczny tylko wtedy gdy dash nie jest na cooldownie ~~
+      Można dodać powidok gracza pokazujący gdzie się znajdzie po dashu/blinku i widoczny tylko wtedy gdy dash nie jest na cooldownie~~ - done
 11) ~~Menu pauzy~~ - done
 12) ~~Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu~~ - done
 13) ~~Ekran po śmierci gracza, zmiana scen przy użyciu przycisków~~ - done
