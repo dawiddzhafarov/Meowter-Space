@@ -25,7 +25,7 @@ TODO:
 12) ~~Kamera powinna zawsze pokazywać plansze po której gracz może się poruszać nie zależnie od rozmiaru ekranu~~ - done
 13) ~~Ekran po śmierci gracza, zmiana scen przy użyciu przycisków~~ - done
 14) ~~Naprawić timer by startował przy starcie rozgrywki~~ - done
-15) ~~Laser aktualnie przysłania stateczek, zrobić go pod stateczkiem~~  - done
+15) ~~Laser aktualnie przysłania stateczek, zrobić go pod statkiem~~ - done
 16) ~~Tarczownik nie reaguje na kolizję z tarczą z asseta, ponadto nadal widać tarczę tą białą, domyślną. ~~~- done
 17) ~~Tło kamery mogłoby się poruszać~~ - done
 18) ~~W settings naprawić guziki~~ - done
